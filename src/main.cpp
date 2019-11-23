@@ -14,10 +14,10 @@ void setup() {
 }
 
 void loop() {
-  delay(OFF_TIME);
+  delay(10);
   if (digitalRead(TURN_PIN) == HIGH) {
     digitalWrite(BEEP_PIN, HIGH);
-    delay(ON_TIME);
+  } else {
     digitalWrite(BEEP_PIN, LOW);
   }
 }
